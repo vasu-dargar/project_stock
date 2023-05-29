@@ -3,8 +3,9 @@
 Requirements -
 
 1- Python 3 (if possible, latest version) with pip
-2- MySQL database with  python connector (Link - 'https://dev.mysql.com/downloads/windows/installer/8.0.html') and mysqlclient (pip install mysqlclient)
-3- Install Django using command 'pip install Django' on cmd
+2- Install python library requests
+3- MySQL database with  python connector (Link - 'https://dev.mysql.com/downloads/windows/installer/8.0.html') and mysqlclient (pip install mysqlclient)
+4- Install Django using command 'pip install Django' on cmd
 
 Process to start application(on localhost -> http://127.0.0.1:8000/) -
 1- Create a database(my_database) in MySQL installed on your system using command 'create database my_database'
