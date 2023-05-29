@@ -1,0 +1,17 @@
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-dismissible alert-success" data-closable id="message_box">
+      <button type="button" class="close-button" data-dismiss="alert" data-close onclick="buttonclose()">
+      ×
+      </button>
+      <strong>{{ message }}</strong>
+    </div>
+ {% endfor %}
+{% endif %}
+
+<script>
+    var message_tag = document.getElementById("message_box");
+    function buttonclose(){ 
+       message_tag.style.display = "none"; 
+    };  
+</script>

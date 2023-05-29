@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+  
+{% block title %}Add/Remove stock symbols{% endblock %}
+
+{% block content %} 
+
+  <table style="width:25%">
+    {% for x in symbols %}
+      <tr style="height:200%">
+      <td>{{ forloop.counter }}</td>
+      <td>{{ x.name }}</td>
+      <td><a href="/add-remove/{{ x.name }}">Delete</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  <br>
+  <br>
+  <p>
+  <a href="/add">Add symbols</a>
+  </p>
+
+    <a href="/profile" class="btn btn-danger">Watchlist</a>
+{% endblock %}

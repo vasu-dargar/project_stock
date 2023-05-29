@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  {% include 'messages.html' %}
+  {% if user.is_authenticated %}
+    <h2>Welcome {{ user.username }}!</h2>
+    <br>
+    <br>
+    <div class="col-md-12">
+      <h2>Latest watchlist stock values</h2><br>
+          {% if count == 0 %}
+            </p>
+              No stock symbols added
+            </p>
+          {% else %}
+            {% for symbol in symbols %}
+              <h4>{{ symbol.name }}</h4>
+              1. Last Refreshed - {{ info|get_item:symbol.name|get_item:"Last Refreshed" }}
+              <br>
+              2. Interval - {{ info|get_item:symbol.name|get_item:"Interval" }}
+              <br>
+              3. Time Zone - {{ info|get_item:symbol.name|get_item:"Time Zone" }}
+              <br>
+              4. Latest stock value - {{ info|get_item:symbol.name|get_item:"Latest stock value" }}
+              <br>
+              <br>
+              <br>
+            {% endfor %}
+          {% endif %}
+    </div>
+      <a href="/add-remove" class="btn btn-danger">Add / Remove</a>
+      <a href="/signout" class="btn btn-danger">Logout</a>
+  {% else %}
+    <br>
+    <br>
+    <a href="/signin" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span>Login</a> 
+    <a href="/signup" class="btn btn-success">Signup</a>
+  {% endif %}
+{% endblock %}
