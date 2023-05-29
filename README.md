@@ -6,7 +6,7 @@ Requirements -
 2- MySQL database with connection to python on system (Link - 'https://dev.mysql.com/downloads/installer/')
 
 Process to start application(on localhost -> http://127.0.0.1:8000/) -
-1- Install Django on your system using command 'python -m pip install Django' on cmd
+1- Install Django on your system using command 'pip install Django' on cmd
 2- Create a database(my_database) in MySQL installed on your system using command 'create database my_database'
    Username - root
    Password - project_stock_pass
