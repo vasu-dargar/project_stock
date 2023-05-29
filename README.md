@@ -1,4 +1,4 @@
-# Stock-Symbols-Information
+# project_stock
 
 Requirements -
 
