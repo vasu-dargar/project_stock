@@ -2,7 +2,7 @@
 
 A real-time stock monitoring platform designed for multiple users, enabling them to track market data, analyze trends, and manage watchlists with secure, role-based access.
 
-*REQUIREMENTS ->
+REQUIREMENTS ->
 
    1- Python 3 (latest version is recommended)
 
@@ -18,7 +18,7 @@ A real-time stock monitoring platform designed for multiple users, enabling them
 
    5- Install Django (pip install Django)
 
-*PROCESS TO START APPLICATION (on localhost -> http://127.0.0.1:8000/) ->
+PROCESS TO START APPLICATION (on localhost -> http://127.0.0.1:8000/) ->
 
    1- Create a database(my_database) in MySQL installed on your system using command 'create database my_database'
    
@@ -40,8 +40,7 @@ A real-time stock monitoring platform designed for multiple users, enabling them
    
    8- Use the application
 
+NOTE ->
    
-   *NOTE ->
-   
-   In some symbols if result is an error saying " Key Error : 'Meta Data' ", kindly refresh the page till result is shown.
-   This error is due to server providing respective stock symbol information.
+In some symbols if result is an error saying " Key Error : 'Meta Data' ", kindly refresh the page till result is shown.
+This error is due to server providing respective stock symbol information.
